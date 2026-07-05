@@ -143,3 +143,7 @@ def main():
         elif opcion == 7:
             print("Programa terminado")
             break
+
+
+if __name__ == "__main__":
+    main()
