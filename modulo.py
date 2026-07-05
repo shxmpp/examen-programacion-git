@@ -69,3 +69,30 @@ def agregar_producto(
     productos[codigo] = [nombre, categoria, precio, disponible]
     inventario[codigo] = [stock, vendidos]
     return True
+
+
+# Definimos las funciones de validaciones
+
+
+def validar_nombre(nombre):
+    return nombre.strip() != " "
+
+
+def validar_categoria(categoria):
+    return categoria.strip() != " "
+
+
+def validar_precio(precio):
+    return precio > 0
+
+
+def validar_stock(stock):
+    return stock > 0
+
+
+def validar_vendidos(vendidos):
+    return vendidos > 0
+
+
+def validar_disponibles(opcion):
+    return opcion.lower() in ["S", "N"]
