@@ -43,7 +43,18 @@ def main():
             except:
                 print("Debe ingresar numeros")
         elif opcion == 3:
-            pass
+            try:
+                codigo = input("codigio: ")
+
+                precio = int(input("Nuevo precio: "))
+
+                if modulo.actualizar_precio(codigo, precio, productos):
+
+                    print("Precio Actualizado")
+                else:
+                    print("Codigo inexistente")
+            except:
+                print("Debe ingresar un numero")
         elif opcion == 4:
             pass
         elif opcion == 5:

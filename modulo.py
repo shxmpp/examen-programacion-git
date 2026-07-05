@@ -39,3 +39,14 @@ def buscar_precio(precio_min, precio_max, productos, inventario):
     for nombre, codigo in lista:
 
         print(nombre, "--", codigo)
+
+
+def actualizar_precio(codigo, nuevo_precio, productos):
+
+    if codigo in productos:
+
+        productos[codigo.upper()][2] = nuevo_precio
+
+        return True
+
+    return False
