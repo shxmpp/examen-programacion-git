@@ -82,6 +82,19 @@ def eliminar_producto(codigo, producto, inventario):
     return False
 
 
+def validar_codigo(codigo, producto):
+
+    codigo = codigo.strip().upper()
+
+    if codigo == " ":
+        return False
+
+    if codigo in producto:
+        return False
+
+    return True
+
+
 def mostrar_productos(producto, inventario):
 
     for codigo in producto:

@@ -18,6 +18,7 @@ def main():
         "P104": [8, 25],
     }
     while True:
+        os.system("cls")
         print(f"""
             ========== MENÚ PRINCIPAL ==========
             1. Stock por categoría
@@ -59,7 +60,7 @@ def main():
             while True:
                 codigo = input("Codigo: ").upper()
 
-                if modulo.validar_nombre(codigo, productos):
+                if modulo.validar_codigo(codigo, productos):
                     break
                 print("Codigo invalido.")
 
