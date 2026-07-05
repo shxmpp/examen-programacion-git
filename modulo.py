@@ -71,6 +71,17 @@ def agregar_producto(
     return True
 
 
+def eliminar_producto(codigo, producto, inventario):
+
+    if codigo in producto:
+        del producto[codigo]
+        del inventario[codigo]
+
+        return True
+
+    return False
+
+
 # Definimos las funciones de validaciones
 
 
