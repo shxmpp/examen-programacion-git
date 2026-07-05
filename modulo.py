@@ -82,6 +82,20 @@ def eliminar_producto(codigo, producto, inventario):
     return False
 
 
+def mostrar_productos(producto, inventario):
+
+    for codigo in producto:
+        print("-------------------------------------------")
+        print("Codigo:", codigo)
+        print("Nombre:", producto[codigo][0])
+        print("Categoria:", producto[codigo][1])
+        print("Precio:", producto[codigo][2])
+        print("Disponible:", producto[codigo][3])
+        print("Stock:", inventario[codigo][0])
+        print("Vendidos:", inventario[codigo][1])
+        print("-------------------------------------------")
+
+
 # Definimos las funciones de validaciones
 
 

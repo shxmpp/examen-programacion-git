@@ -132,9 +132,14 @@ def main():
                 print("El codigo ya existe")
 
         elif opcion == 5:
-            pass
+            codigo = input("Ingrese el codigo del producto a eliminar: ").upper()
+
+            if modulo.eliminar_producto(codigo, productos, inventario):
+                print("Producto eliminado correcataente")
+            else:
+                print("Codigo inexistente")
         elif opcion == 6:
-            pass
+            modulo.mostrar_productos(productos, inventario)
         elif opcion == 7:
             print("Programa terminado")
             break
