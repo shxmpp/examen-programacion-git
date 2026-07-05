@@ -34,7 +34,14 @@ def main():
             categoria = input("Ingrese una categoria: ")
             modulo.stock_categoria(categoria, productos, inventario)
         elif opcion == 2:
-            pass
+            try:
+                minimo = int(input("Precio minimo: "))
+                maximo = int(input("precio maximo: "))
+
+                modulo.buscar_precio(minimo, maximo, productos, inventario)
+
+            except:
+                print("Debe ingresar numeros")
         elif opcion == 3:
             pass
         elif opcion == 4:
