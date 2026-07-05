@@ -92,7 +92,7 @@ def main():
                 disponble = input("Disponible (S/N): ").lower()
 
                 if modulo.validar_disponibles(disponble):
-                    disponble = disponble == "S"
+                    disponble == "s" or disponble == "n"
                     break
 
                 print("Debe ingresar S o N.")
@@ -141,6 +141,7 @@ def main():
                 print("Codigo inexistente")
         elif opcion == 6:
             modulo.mostrar_productos(productos, inventario)
+            input("\n Presione ENTER para volver al menú")
         elif opcion == 7:
             print("Programa terminado")
             break

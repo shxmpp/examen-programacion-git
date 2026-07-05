@@ -133,4 +133,4 @@ def validar_vendidos(vendidos):
 
 
 def validar_disponibles(opcion):
-    return opcion.lower() in ["S", "N"]
+    return opcion.strip().lower() in ["s", "n"]
