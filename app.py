@@ -59,7 +59,7 @@ def main():
             while True:
                 codigo = input("Codigo: ").upper()
 
-                if modulo.vaidar_codigo(codigo, productos):
+                if modulo.validar_nombre(codigo, productos):
                     break
                 print("Codigo invalido.")
 
@@ -90,7 +90,7 @@ def main():
             while True:
                 disponble = input("Disponible (S/N): ").lower()
 
-                if modulo.validar_disponible(disponble):
+                if modulo.validar_disponibles(disponble):
                     disponble = disponble == "S"
                     break
 
