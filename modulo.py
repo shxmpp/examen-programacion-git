@@ -50,3 +50,22 @@ def actualizar_precio(codigo, nuevo_precio, productos):
         return True
 
     return False
+
+
+def agregar_producto(
+    codigo,
+    nombre,
+    categoria,
+    precio,
+    disponible,
+    stock,
+    vendidos,
+    productos,
+    inventario,
+):
+    if codigo in productos:
+        return False
+
+    productos[codigo] = [nombre, categoria, precio, disponible]
+    inventario[codigo] = [stock, vendidos]
+    return True
