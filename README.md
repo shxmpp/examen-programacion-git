@@ -343,6 +343,6 @@ Productos         Inventario
 
 **Daniel Miranda**
 
-Proyecto desarrollado para la asignatura **Fundamentos de Programación (FPY1101)** utilizando Python y Visual Studio Code.
+Proyecto desarrollado para la asignatura **Fundamentos de Programación ** utilizando Python y Visual Studio Code.
 
 ⭐ Si este proyecto te resulta útil, no olvides darle una estrella al repositorio.
