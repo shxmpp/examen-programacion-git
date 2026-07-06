@@ -1,15 +1,5 @@
 # 🛒 Sistema de Gestión de Productos en Python
 
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![Estado](https://img.shields.io/badge/Estado-Completado-success?style=for-the-badge)
-![Licencia](https://img.shields.io/badge/Licencia-Uso%20Académico-orange?style=for-the-badge)
-
-</p>
-
----
-
 # 📖 Descripción
 
 Este proyecto corresponde al desarrollo de un **Sistema de Gestión de Productos** realizado en **Python**, utilizando programación modular.
